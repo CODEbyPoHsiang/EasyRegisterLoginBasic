@@ -30,3 +30,18 @@ Route::group(['middleware' => 'auth:api'], function () {
     // 使用者清單 api
     Route::get('list', 'LoginController@user_list');
 });
+
+
+/*
+|--------------------------------------------------------------------------
+| 修改env API
+|--------------------------------------------------------------------------
+*/
+//檢視env清單資料
+Route::get('env', 'EnvController@getContent');
+//新增 env 資料
+Route::post('env', 'EnvController@store');
+//修改 env 資料
+Route::put('env', 'EnvController@update');
+//刪除 env 資料
+Route::delete('env', 'EnvController@delete');

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "8bc6860b40a866b098a6bd01f0428b95",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -559,6 +559,62 @@
             "time": "2020-10-22T13:57:20+00:00"
         },
         {
+            "name": "geo-sot/laravel-env-editor",
+            "version": "v0.9.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GeoSot/Laravel-EnvEditor.git",
+                "reference": "178f4ae3bd528f202f3354b4026d0d32ca5e7937"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GeoSot/Laravel-EnvEditor/zipball/178f4ae3bd528f202f3354b4026d0d32ca5e7937",
+                "reference": "178f4ae3bd528f202f3354b4026d0d32ca5e7937",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.5",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "GeoSot\\EnvEditor\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "EnvEditor": "GeoSot\\EnvEditor\\Facades\\EnvEditor"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeoSot\\EnvEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Geo Sot",
+                    "email": "geo.sotis@gmail.com"
+                }
+            ],
+            "description": "A laravel Package that supports .Env File, editing and backup ",
+            "keywords": [
+                "EnvEditor",
+                "geo-sot",
+                "laravel",
+                "laravel-env-editor"
+            ],
+            "time": "2021-01-09T17:00:00+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.0.1",
             "source": {
@@ -839,6 +895,59 @@
                 "url"
             ],
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "jackiedo/dotenv-editor",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JackieDo/Laravel-Dotenv-Editor.git",
+                "reference": "f93690a80915d51552931d9406d79b312da226b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JackieDo/Laravel-Dotenv-Editor/zipball/f93690a80915d51552931d9406d79b312da226b9",
+                "reference": "f93690a80915d51552931d9406d79b312da226b9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^5.8|^6.0|^7.0|^8.0",
+                "illuminate/contracts": "^5.8|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.8|^6.0|^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jackiedo\\DotenvEditor\\DotenvEditorServiceProvider"
+                    ],
+                    "aliases": {
+                        "DotenvEditor": "Jackiedo\\DotenvEditor\\Facades\\DotenvEditor"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jackiedo\\DotenvEditor\\": "src/Jackiedo/DotenvEditor"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jackie Do",
+                    "email": "anhvudo@gmail.com"
+                }
+            ],
+            "description": "The .env file editor tool for Laravel 5.8+",
+            "keywords": [
+                "dotenv",
+                "dotenv-editor",
+                "laravel"
+            ],
+            "time": "2020-09-13T07:00:36+00:00"
         },
         {
             "name": "laravel/framework",

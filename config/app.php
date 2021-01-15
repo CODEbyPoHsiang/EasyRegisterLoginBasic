@@ -68,7 +68,7 @@ return [
     */
 
     // 'timezone' => 'UTC',
-    'timezone' => 'Asia/Taipei',
+    'timezone' =>  "Asia/Taipei",
 
     /*
     |--------------------------------------------------------------------------
@@ -166,7 +166,6 @@ return [
         /*
          * Package Service Providers...
          */
-
         /*
          * Application Service Providers...
          */
