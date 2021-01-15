@@ -23,3 +23,10 @@ Route::post('register', 'RegisterController@register');
 
 // 登入 api
 Route::post('login', 'LoginController@login');
+
+Route::group(['middleware' => 'auth:api'], function () {
+    // 登出 api
+    Route::post('logout', 'LoginController@logout');
+    // 使用者清單 api
+    Route::get('list', 'LoginController@user_list');
+});

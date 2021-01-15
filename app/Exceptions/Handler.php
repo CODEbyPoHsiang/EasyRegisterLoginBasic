@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -33,8 +34,13 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
-        $this->reportable(function (Throwable $e) {
-            //
+         // token 未帶報錯誤
+         $this->renderable(function (RouteNotFoundException $e, $request) {
+            return response()->json(  $response = [
+                'success' => false,
+                'status' =>"FAIL",
+                'message' =>'未經允許登入，請重新操作'
+            ], 202);
         });
     }
 }
