@@ -43,8 +43,6 @@ cp .env.example .env
   php artisan serve
 ```
 ---
-## Laravel 主要資料夾說明:
----
 ## Laravel 主要API說明:
 ---
 * 註冊 API (POST)
