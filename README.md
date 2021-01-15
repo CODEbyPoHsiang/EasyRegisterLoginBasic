@@ -44,7 +44,7 @@ cp .env.example .env
 ```
 ---
 ## Laravel 主要API說明:
----
+
 * 註冊 API (POST)
 ```
 http://localhost:8000/api/register
