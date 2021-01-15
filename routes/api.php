@@ -38,10 +38,10 @@ Route::group(['middleware' => 'auth:api'], function () {
 |--------------------------------------------------------------------------
 */
 //檢視env清單資料
-Route::get('env', 'EnvController@getContent');
+Route::get('env_list', 'EnvController@getContent');
 //新增 env 資料
-Route::post('env', 'EnvController@store');
+Route::post('env_new', 'EnvController@store');
 //修改 env 資料
-Route::put('env', 'EnvController@update');
+Route::put('env_edit', 'EnvController@update');
 //刪除 env 資料
-Route::delete('env', 'EnvController@delete');
+Route::delete('env_del', 'EnvController@delete');
