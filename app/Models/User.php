@@ -39,7 +39,6 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'created_at' => 'datetime',// or other format
     ];
 
 
@@ -50,6 +49,13 @@ class User extends Authenticatable
     public $incrementing = false;
     // 主鍵型別
     protected $keyType = 'string';
+
+//     protected function serializeDate(\DateTimeInterface $date)
+// {
+//     return $date->format('Y-m-d H:i:s');
+// }
+
+// public $timestamps = false;
 
    
 }
