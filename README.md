@@ -62,23 +62,3 @@ http://localhost:8000/api/logout
 http://localhost:8000/api/list
 ```
 ---
-## 編輯 ENV API:
-
-*  env 項目清單 API (GET)
-```
-http://localhost:8000/api/env_list
-```
-* 新增 env 項目 API (POST)
-```
-http://localhost:8000/api/env_new
-```
-* 修改 env 項目 API (PUT)
-```
-http://localhost:8000/api/env_edit
-```
-* 刪除 env 項目 API (DELETE)
-```
-http://localhost:8000/api/env_del
-```
-
-
