@@ -7,10 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-Laravel EasyRegisterLogin
+Laravel EasyRegisterLogin (簡易註冊系統：api_token使用)
 ======================
-
-
 ## 
 1. CLONE 專案 :
 ```
